@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import GeminiLogo from "../logos/Gemini.png";
-import LaunchLogo from "../logos/Launch.png";
-import SettingsLogo from "../logos/Settings.png";
+import GeminiLogo from "../Logos/Gemini.png";
+import LaunchLogo from "../Logos/Launch.png";
+import SettingsLogo from "../Logos/Settings.png";
 
 export function HeroBanner() {
   return (
@@ -39,9 +39,9 @@ export function HeroBanner() {
                <p className="text-gray-500 text-[7px] md:text-[8px] uppercase tracking-tighter mt-0.5">io.google</p>
             </div>
             <div className="mt-4 flex items-center gap-3">
-              <img src={GeminiLogo} alt="Gemini logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
-              <img src={LaunchLogo} alt="Launch logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
-              <img src={SettingsLogo} alt="Settings logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
+              <img src={GeminiLogo} alt="Gemini Logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
+              <img src={LaunchLogo} alt="Launch Logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
+              <img src={SettingsLogo} alt="Settings Logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
             </div>
           </div>
         </motion.div>
