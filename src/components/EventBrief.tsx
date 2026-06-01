@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
-import GeminiLogo from "../logos/Gemini.png";
-import LaunchLogo from "../logos/Launch.png";
-import SettingsLogo from "../logos/Settings.png";
-import GoogleLogo from "../logos/Google.svg";
+import GeminiLogo from "../Logos/Gemini.png";
+import LaunchLogo from "../Logos/Launch.png";
+import SettingsLogo from "../Logos/Settings.png";
+import GoogleLogo from "../Logos/Google.svg";
 
 export function EventBrief() {
   return (
