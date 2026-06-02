@@ -6,7 +6,7 @@ import GoogleLogo from "../Logos/Google.svg";
 
 export function EventBrief() {
   return (
-    <section className="relative w-full bg-[#f5f5f5] py-20 overflow-hidden">
+    <section className="relative w-full py-20 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <img
           src={GoogleLogo}
@@ -24,14 +24,11 @@ export function EventBrief() {
         </motion.h2>
 
         {/* EVENT BRIEF SECTION */}
-        <div className="grid md:grid-cols-[90px_1fr] gap-0">
+        <div className="grid md:grid-cols-[60px_1fr] gap-0">
 
           {/* LEFT SIDEBAR */}
-          <div className="relative flex flex-col items-center pt-24">
-            {/* Vertical Divider */}
-            <div className="absolute top-0 right-0 h-full w-[2px] bg-gray-300" />
-
-            <div className="flex flex-col gap-20 items-center z-10">
+          <div className="relative flex flex-col items-end pr-2 pt-24">
+            <div className="flex flex-col gap-20 items-end z-10">
               <img
                 src={GeminiLogo}
                 alt="Gemini"
@@ -53,64 +50,62 @@ export function EventBrief() {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="pl-6 md:pl-10">
+          <div className="relative pl-0 md:pl-0">
+            <div
+              className="absolute left-4 top-0 bottom-12 w-2 bg-white rounded-l-[6px] z-20"
+              style={{
+                boxShadow: "-28px 0 80px rgba(0,0,0,0.36), inset 0 0 0 1px rgba(255,255,255,0.9)",
+                zIndex: 20,
+              }}
+            />
 
             {/* TITLE */}
-            <h3 className="text-gray-600 font-bold uppercase tracking-[0.25em] text-lg mb-6">
+            <h3 className="text-gray-600 font-bold uppercase tracking-[0.25em] text-lg mb-3 ml-4 md:ml-7">
               THE EVENT IN BRIEF
             </h3>
 
-            {/* BLACK CONTENT BOX */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="
-                relative
-                bg-black
-                text-white
-                px-10
-                md:px-14
-                py-10
-                md:py-12
-                rounded-r-[90px]
-                border
-                border-[#2b5ebf]
-                shadow-[0_40px_80px_rgba(0,0,0,0.35)]
-              "
-            >
-              <div className="space-y-10">
+            {/* BLACK CONTENT BOX with tighter white left border */}
+            <div className="relative">
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}
+                className="relative ml-6 bg-black text-white px-10 md:px-14 py-10 md:py-12 rounded-r-[100px] shadow-[0_40px_80px_rgba(0,0,0,0.95)]"
+                >
 
-                <p className="text-xl md:text-[22px] leading-relaxed">
-                  <span className="font-bold text-[#00A8FF]">
-                    Gemini is now the OS
-                  </span>{" "}
-                  — embedded across Search, Gmail, YouTube, Workspace &
-                  hardware
-                </p>
+                <div className="space-y-10">
 
-                <p className="text-xl md:text-[22px] leading-relaxed">
-                  <span className="font-bold text-[#00A8FF]">
-                    Developers got real tools
-                  </span>{" "}
-                  — Antigravity 2.0, Managed Agents API, and a $2M hackathon
-                </p>
+                  <p className="text-xl md:text-[22px] leading-relaxed">
+                    <span className="font-bold text-[#00A8FF]">
+                      Gemini is now the OS
+                    </span>{" "}
+                    — embedded across Search, Gmail, YouTube, Workspace &
+                    hardware
+                  </p>
 
-                <p className="text-xl md:text-[22px] leading-relaxed">
-                  <span className="font-bold text-[#00A8FF]">
-                    Products, not promises
-                  </span>{" "}
-                  — Flow, Stitch, XR Glasses, Universal Cart, and 100+
-                  announcements
-                </p>
+                  <p className="text-xl md:text-[22px] leading-relaxed">
+                    <span className="font-bold text-[#00A8FF]">
+                      Developers got real tools
+                    </span>{" "}
+                    — Antigravity 2.0, Managed Agents API, and a $2M hackathon
+                  </p>
 
-              </div>
-            </motion.div>
+                  <p className="text-xl md:text-[22px] leading-relaxed">
+                    <span className="font-bold text-[#00A8FF]">
+                      Products, not promises
+                    </span>{" "}
+                    — Flow, Stitch, XR Glasses, Universal Cart, and 100+
+                    announcements
+                  </p>
+
+                </div>
+              </motion.div>
+            </div>
 
             {/* STATS SECTION */}
-            <div className="mt-12">
-              <div className="w-full h-[4px] bg-gray-300 mb-12" />
+            <div className="mt-12 ml-10 md:ml-14 max-w-[720px]">
+              <div className="w-[220px] md:w-[300px] h-[4px] bg-gray-300 mb-12" />
 
               <div className="grid md:grid-cols-3 gap-10">
 
