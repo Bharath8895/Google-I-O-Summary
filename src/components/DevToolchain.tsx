@@ -42,7 +42,7 @@ const CARDS = [
 
 export function DevToolchain() {
   return (
-    <section className="relative w-full bg-[#f8f9fa] py-16 px-6 md:px-24">
+    <section className="relative w-full bg-[#f8f9fa] pt-2 pb-16 px-6 md:px-24">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}
@@ -51,12 +51,12 @@ export function DevToolchain() {
         >
           <span className="text-blue-600">Operationalizing Agents:</span> Google's Next-Gen Developer Toolchain
         </motion.h2>
-        <div className="flex flex-col md:flex-row md:items-center gap-4 mb-12">
+        <div className="flex flex-col md:flex-row md:items-center gap-2 mb-2">
             <h3 className="text-lg font-bold text-blue-800">Sandboxing:</h3>
             <p className="text-gray-500 font-medium">Where builders got their hands on with live labs, open tools, and testable infrastructure across two packed days</p>
         </div>
 
-        <div className="flex items-center gap-2 mb-8 bg-green-50 w-fit px-4 py-1.5 rounded-xs border border-green-100">
+        <div className="flex items-center gap-2 mb-2 bg-green-50 w-fit px-4 py-1.5 rounded-xs border border-green-100">
            <div className="w-3 h-3 bg-green-500 rounded-full" />
            <p className="text-xs font-bold text-green-800 uppercase tracking-widest">Hands-on tracks · Google I/O 2026</p>
            <div className="ml-8 text-xs font-bold text-green-600 bg-white border border-green-200 px-3 py-0.5 rounded-full">
@@ -73,11 +73,11 @@ export function DevToolchain() {
               transition={{ delay: idx * 0.05 }}
               className="bg-white p-8 group hover:bg-gray-50 transition-colors"
             >
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2">
                 <div className={`w-10 h-10 shrink-0 ${card.iconBg} rounded-[10px] flex items-center justify-center border border-gray-100`}>
                   {card.icon}
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <h4 className="text-xl font-bold text-gray-900">{card.title}</h4>
                   <p className="text-sm text-gray-500 leading-relaxed font-light">
                     {card.content}
@@ -88,7 +88,7 @@ export function DevToolchain() {
           ))}
         </div>
 
-        <div className="mt-12 space-y-4">
+        <div className="mt-2 space-y-1">
            <div className="flex items-center gap-2 text-blue-600 text-sm font-bold opacity-80 cursor-pointer hover:opacity-100 transition-opacity">
               <span>▶ All sessions, codelabs & technical deep-dives available on demand</span>
               <span className="underline">io.google</span>

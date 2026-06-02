@@ -18,7 +18,7 @@ const TIMELINE = [
 
 export function GeminiStack() {
   return (
-    <section className="relative w-full bg-white py-16 px-6 md:px-24">
+    <section className="relative w-full bg-white pt-2 pb-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}
@@ -27,7 +27,7 @@ export function GeminiStack() {
         >
           Widening the Gemini AI stack — Creativity, XR, Search and Science
         </motion.h2>
-        <h3 className="text-xl font-bold text-gray-500 uppercase tracking-widest mb-12">Where were the announcements</h3>
+        <h3 className="text-xl font-bold text-gray-500 uppercase tracking-widest mb-6">Where were the announcements</h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
           {STACK_ITEMS.map((item, idx) => (
@@ -47,8 +47,8 @@ export function GeminiStack() {
           ))}
         </div>
 
-        <div className="mt-20">
-          <h3 className="text-xl font-bold text-gray-500 uppercase tracking-widest mb-12">What's Coming When</h3>
+        <div className="mt-4">
+          <h3 className="text-xl font-bold text-gray-500 uppercase tracking-widest mb-6">What's Coming When</h3>
           <div className="space-y-8">
             {TIMELINE.map((step, idx) => (
               <motion.div 

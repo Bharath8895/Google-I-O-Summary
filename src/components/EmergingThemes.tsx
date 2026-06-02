@@ -68,25 +68,25 @@ const CATEGORIES = [
 
 export function EmergingThemes() {
   return (
-    <section className="relative w-full bg-[#f8f9fa] py-16 px-6 md:px-24">
+    <section className="relative w-full bg-[#f8f9fa] pt-2 pb-16 px-6 md:px-24">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="text-3xl font-bold mb-12 text-gray-900"
+          className="text-3xl font-bold mb-4 text-gray-900"
         >
           Google I/O 2026 - Emerging Themes
         </motion.h2>
 
-        <div className="space-y-16">
+        <div className="space-y-4">
           {CATEGORIES.map((category, idx) => (
-            <div key={idx} className="space-y-6">
-              <div className="flex items-center gap-4">
+            <div key={idx} className="space-y-2">
+              <div className="flex items-center gap-2">
                 <div className={`w-1 h-8 ${category.color}`} />
                 <h3 className="text-xl font-bold uppercase tracking-wider text-gray-500">{category.title}</h3>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 {category.items.map((item, iIdx) => (
                   <motion.div
                     key={iIdx}
@@ -108,7 +108,7 @@ export function EmergingThemes() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          className="mt-12 p-6 border border-blue-200 bg-blue-50/30 rounded-xs"
+          className="mt-4 p-6 border border-blue-200 bg-blue-50/30 rounded-xs"
         >
           <p className="text-blue-800 font-medium">
              <span className="font-bold">Google's overarching message:</span> Al has moved from assistant to agent. Every announcement this year was anchored in Gemini becoming proactive, autonomous, and deeply embedded across Google's full product stack — from Search to Workspace to developer infrastructure.

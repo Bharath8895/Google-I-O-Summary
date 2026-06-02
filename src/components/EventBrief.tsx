@@ -6,12 +6,12 @@ import GoogleLogo from "../Logos/Google.svg";
 
 export function EventBrief() {
   return (
-    <section className="relative w-full py-20 overflow-hidden">
+    <section className="relative w-full pt-5 pb-20 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <img
           src={GoogleLogo}
           alt="Google logo"
-          className="absolute top-6 right-6 w-10 h-10 md:w-12 md:h-12"
+          className="absolute top-4 right-4 w-12 h-12 md:w-14 md:h-14"
         />
 
         <motion.h2
