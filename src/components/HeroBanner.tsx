@@ -1,8 +1,4 @@
 import { motion } from "motion/react";
-import GeminiLogo from "../Logos/Gemini.png";
-import LaunchLogo from "../Logos/Launch.png";
-import SettingsLogo from "../Logos/Settings.png";
-
 export function HeroBanner() {
   return (
     <section className="relative w-full h-[320px] md:h-[420px] bg-black overflow-hidden flex items-end px-4 md:px-8">
@@ -12,9 +8,6 @@ export function HeroBanner() {
       <div className="absolute top-0 right-0 w-[45%] h-full bg-[#222] skew-x-[-30deg] origin-top-right translate-x-48" />
       
       <div className="relative z-10 flex items-end justify-between w-full max-w-[1600px] mx-auto h-full pb-0">
-        <div className="absolute top-4 right-6 px-3 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-semibold uppercase tracking-[0.2em] opacity-90">
-          Google
-        </div>
 
         {/* Left: Google I/O Branding */}
         <motion.div 
@@ -37,11 +30,6 @@ export function HeroBanner() {
             <div className="mt-2 text-center">
                <p className="text-white text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] opacity-90">May 19–20, 2026</p>
                <p className="text-gray-500 text-[7px] md:text-[8px] uppercase tracking-tighter mt-0.5">io.google</p>
-            </div>
-            <div className="mt-4 flex items-center gap-3">
-              <img src={GeminiLogo} alt="Gemini Logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
-              <img src={LaunchLogo} alt="Launch Logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
-              <img src={SettingsLogo} alt="Settings Logo" className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 p-2" />
             </div>
           </div>
         </motion.div>
